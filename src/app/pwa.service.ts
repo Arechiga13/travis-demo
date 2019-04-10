@@ -8,9 +8,10 @@ export class PwaService {
         window.addEventListener('beforeinstallprompt', event => {
             this.promptEvent = event;
         });
-        window.addEventListener('appinstalled', (event) => {
-            alert('App installed!');
-        });
+        // This works
+        // window.addEventListener('appinstalled', (event) => {
+        //     alert('App installed!');
+        // });
         window.addEventListener('appupdated', (event) => {
             alert('App Update avable!');
         });
