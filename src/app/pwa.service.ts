@@ -10,7 +10,7 @@ export class PwaService {
         // alert("Here");
         window.addEventListener('beforeinstallprompt', event => {
             console.log(this.promptEvent);
-            alert("Here2");
+            alert('Here2');
             this.promptEvent = event;
             console.log(this.promptEvent);
         });

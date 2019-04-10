@@ -10,7 +10,20 @@ import { PwaService } from './pwa.service';
 
 @NgModule({
   declarations: [AppComponent, PostComponent],
-  imports: [BrowserModule, HttpClientModule, ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }), ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    ServiceWorkerModule.register('/ngsw-worker.js',
+      {
+        enabled: environment.production
+      }
+    ),
+    ServiceWorkerModule.register('ngsw-worker.js',
+      {
+        enabled: environment.production
+      }
+    )
+  ],
   providers: [PwaService],
   bootstrap: [AppComponent]
 })

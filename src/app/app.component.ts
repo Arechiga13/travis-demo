@@ -22,8 +22,8 @@ export class AppComponent implements OnInit {
   }
 
   installPwa(): void {
-    console.log("Here")
-    console.log(this.Pwa.promptEvent)
+    console.log('Here');
+    console.log(this.Pwa.promptEvent);
     this.Pwa.promptEvent.prompt();
   }
 
